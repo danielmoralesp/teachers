@@ -13,6 +13,18 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+
+//= require easing
+//= require mobile-nav
+//= require wow
+//= require waypoints.min
+//= require counterup.min
+//= require owl.carousel
+//= require isotope.pkgd
+//= require js/lightbox
+
+//= require main
+
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
