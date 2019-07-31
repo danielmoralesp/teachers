@@ -5,3 +5,17 @@
 - Make landing to teachers
 - Make student's and teacher's models and associations
 - Make seeds.rb and execute
+
+
+
+#### How to make deploy iteration
+
+- Make changes
+- Change Uglifier
+- optional: 
+	- rails assets:clean
+	- rails assets:precompile
+- git add .
+- git commit
+- git push origin master
+- git push heroku master
