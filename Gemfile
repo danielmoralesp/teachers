@@ -34,6 +34,9 @@ gem "font-awesome-rails"
 # Users
 gem 'devise'
 
+# Environment variables
+gem "figaro"
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

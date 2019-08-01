@@ -1,7 +1,8 @@
-- Devise with design
-- Upload assets to production
-- Send emails to new user registered
+- Devise with design *
+- Upload assets to production *
+- Send emails to new user registered 
 - Config emailing from development and production (sendgrid)
+- Design and make databases and relationships
 - Make landing to teachers
 - Make student's and teacher's models and associations
 - Make seeds.rb and execute
