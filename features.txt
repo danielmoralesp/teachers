@@ -2,10 +2,23 @@
 - Upload assets to production *
 - Send emails to new user registered *
 - Config emailing from development and production (sendgrid) *
-- Design and make databases and relationships
-- Make landing to teachers
-- Make student's and teacher's models and associations
-- Make seeds.rb and execute
+- Design and make databases and relationships *
+- Make landing to teachers *
+
+- deploy to production
+- image with gravatar
+- upload images with shrine and roda
+- make editor with trix
+- make student and teacher manual (without scaffold)
+  - first: model, migration and associations
+  - second: routes, controllers and views
+  - list all teachers
+- secure controllers via callback validation
+- deploy to production
+- make tutoring model, association, routes, controller, views
+- make admin dashboard with namespace and secure the controllers
+  - approve or desaprove teacher registration
+
 
 
 
