@@ -6,7 +6,15 @@ class User < ApplicationRecord
 
   belongs_to :city
 
+  after_create :set_default_user
   after_create :send_welcome_email
+  
+  enum role: [:user, :student, :teacher, :admin]
+
+
+  def set_default_user
+  	self.user!
+  end
 
   def send_welcome_email
   	UserNotifierMailer.welcome_user(self).deliver_now
