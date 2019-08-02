@@ -16,3 +16,9 @@ City.create([
 	{ name: "Cartagena" },
 	{ name: "Bucaramanga" }
 ])
+
+Type.delete_all
+Type.create([
+	{ name: "Virtual" },
+	{ name: "Presential" },
+])
