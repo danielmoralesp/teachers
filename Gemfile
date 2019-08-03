@@ -37,6 +37,10 @@ gem 'devise'
 # Environment variables
 gem "figaro"
 
+# Upload files and images
+gem "shrine"
+gem 'roda'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

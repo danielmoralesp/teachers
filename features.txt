@@ -5,9 +5,9 @@
 - Design and make databases and relationships *
 - Make landing to teachers *
 
-- deploy to production
-- image with gravatar
-- upload images with shrine and roda
+- deploy to production *
+- image with gravatar *
+- upload images with shrine and roda *
 - make editor with trix
 - make student and teacher manual (without scaffold)
   - first: model, migration and associations
