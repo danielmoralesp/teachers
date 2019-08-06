@@ -1,0 +1,10 @@
+All Teachers:
+
+<% @teachers.each do |teacher| %>
+	<%= teacher.user.email %>
+	
+	<%= teacher.name %>
+
+	<%= teacher.phone %>
+
+<% end %>
