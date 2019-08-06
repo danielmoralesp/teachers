@@ -20,3 +20,9 @@ Type.first_or_create([
 	{ name: "Virtual" },
 	{ name: "Presential" },
 ])
+
+Topic.first_or_create([
+	{ name: "Language" },
+	{ name: "Math" },
+	{ name: "Chemistry" }
+])

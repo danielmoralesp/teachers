@@ -1,6 +1,7 @@
 class Teacher < ApplicationRecord
   belongs_to :user
   belongs_to :type
+  has_many :tutorings
 
   validates :phone, :name, presence: true
 
