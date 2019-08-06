@@ -3,6 +3,8 @@ class TeachersController < ApplicationController
 	before_action :is_student?, only: [:index, :show]
 	before_action :is_teacher?, only: [:edit, :update, :destroy ]
 
+	before_action :find_teacher, only: [:show]
+
   def index
   	@teachers = Teacher.all
   end
@@ -58,5 +60,9 @@ class TeachersController < ApplicationController
   		unless current_user.teacher?
   			redirect_to root_path, alert: "You don't have permissions, you are not a teacher"
   		end
+  	end
+
+  	def find_teacher
+  		@teacher = Teacher.find(params[:id])
   	end
 end
