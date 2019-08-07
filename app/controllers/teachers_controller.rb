@@ -1,6 +1,5 @@
 class TeachersController < ApplicationController
-	before_action :authenticate_user!, only: [:index]
-	before_action :is_student?, only: [:index, :show]
+	before_action :authenticate_user!, except: [:index, :show]
 	before_action :is_teacher?, only: [:edit, :update, :destroy ]
 
 	before_action :find_teacher, only: [:show]

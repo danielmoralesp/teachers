@@ -1,3 +1,4 @@
 <%= @teacher.name %>
 
-<%= @teacher.phone %>
+
+<%= link_to "Request Tutoring", new_tutoring_path(teacher: @teacher) %>
