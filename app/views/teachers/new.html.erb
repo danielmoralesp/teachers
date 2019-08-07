@@ -22,7 +22,7 @@
 
   <%= f.collection_check_boxes :topic_ids, Topic.all, :id, :name  do %>
 
-  <% end %
+  <% end %>
 
   <div class="form-group">
   	<%= f.number_field :phone, class: "form-control", required: true, placeholder: "Phone Number" %>
