@@ -1,0 +1,35 @@
+Request New Tutoring
+
+<%= form_for @tutoring, url: tutorings_path, method: :post do |f| %>
+
+	<!-- Errors from validation -->
+	<% if @tutoring.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tutoring.errors.count, "error") %> prohibited this @tutoring from being saved:</h2>
+
+      <ul>
+      <% @tutoring.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <!-- end errors -->
+	
+	<div class="form-group">
+		<%= f.collection_select :topic_id, Topic.order(:name), :id, :name, { prompt: "Select Topic of Tutoring..."}, { class: "form-control", autofocus: true, required: true } %>
+	</div>
+
+	<div class="form-group">
+		<%= f.datetime_field :when, required: true %>
+	</div>
+
+	<div class="form-group">
+		<%= f.text_field :where, placeholder: "Where do you want this tutoring?", required: true %>
+	</div>
+
+	<div class="text-center mt-3 mb-5">
+  	<button type="submit" class="btn btn-primary btn-block" title="Request Tutoring">Request Tutoring</button>
+  </div>
+
+<% end %>

@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   
-  resources :topics
-  resources :types
 	root 'home#index'
   get 'home/index'
 
@@ -13,4 +11,7 @@ Rails.application.routes.draw do
   resources :cities
   resources :photos
   resources :teachers
+  resources :topics
+  resources :types
+  resources :tutorings
 end
