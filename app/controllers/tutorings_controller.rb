@@ -7,6 +7,26 @@ class TutoringsController < ApplicationController
 		@tutoring = Tutoring.new
 	end
 
+	def create
+		
+	end
+
+	def show
+		
+	end
+
+	def edit
+		
+	end
+
+	def update
+		
+	end
+
+	def destroy
+		
+	end
+
 	private
 		def validate_student
 			unless current_user.student?
