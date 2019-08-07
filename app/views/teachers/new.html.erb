@@ -20,6 +20,8 @@
     <%= f.collection_select :type_id, Type.order(:name), :id, :name, { prompt: "Select Type of Tutoring..."}, { class: "form-control", autofocus: true, required: true } %>
   </div>
 
+  <%= f.collection_check_boxes :topic_ids, Topic.all, :id, :name %>
+
   <div class="form-group">
   	<%= f.number_field :phone, class: "form-control", required: true, placeholder: "Phone Number" %>
   </div>

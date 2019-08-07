@@ -46,7 +46,7 @@ class TeachersController < ApplicationController
 
   private
   	def teacher_params
-  		params.require(:teacher).permit(:type_id, :phone, :name, :status)
+  		params.require(:teacher).permit(:type_id, :phone, :name, :status, topic_ids:[])
   	end
 
   	def is_student?
