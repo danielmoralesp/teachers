@@ -14,4 +14,7 @@ Rails.application.routes.draw do
   resources :topics
   resources :types
   resources :tutorings
+
+  # all admin routes
+  get 'show_all_teachers', to: "admin#show_all_teachers"
 end
